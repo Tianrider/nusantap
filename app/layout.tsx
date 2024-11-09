@@ -39,17 +39,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
-      <Script
-        type="module"
-        src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        noModule
-        src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"
-        strategy="lazyOnload"
-      />
+      <body className="bg-gray-100">
+        {children}
+        <Script
+          type="module"
+          src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
+          strategy="lazyOnload"
+        />
+        <Script
+          noModule
+          src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"
+          strategy="lazyOnload"
+        />
+      </body>
     </html>
   );
 }
